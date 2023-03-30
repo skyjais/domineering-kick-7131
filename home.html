@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <style>
  #div1{
@@ -22,7 +23,7 @@
 #div2{
     display: flex;
     /* border: 1px solid black;  */
-    margin-left: 500px;
+    margin-left: 400px;
     gap: 30px;
 
 }
@@ -38,7 +39,9 @@
 }
 
 #div2 button{
-   
+    /* 
+     */
+   /* width: 87px; */
     background-color: white;
     display: flex;
     
@@ -173,8 +176,10 @@ justify-content: center;
     display: flex;
     justify-content: center;
     gap: 20px;
+   
     
 }
+
 #div5>.list1 p {
     
     display: block;
@@ -183,9 +188,12 @@ justify-content: center;
 
 #div5>.list1 {
     /* display: block; */
+    /* width: 250px; */
+    
     display: none;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color:white;
+  
 }
 
 
@@ -194,6 +202,8 @@ justify-content: center;
 #div5:hover .list1{
     
     display: block;
+    
+    
    
     /* background-color: rgb(60, 60, 211); */
     /* display: flex; */
@@ -210,10 +220,146 @@ cursor: default;
     color: red;
     cursor: pointer;
 }
-/* 
-#div5 p{
-    margin-left: 23px;
+
+
+/* #div4 img:hover{
+
+   color: red ;
 } */
+
+#option{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+    /* external css: flickity.css */
+
+    * { box-sizing: border-box; }
+
+/* body { font-family: sans-serif; } */
+
+.carousel {
+    width: 100%;
+    
+  background: #EEE;
+}
+
+ .carousel-cell1  {
+  width: 1500px;
+  /* height: auto; */
+  height: 600px;
+  /* margin-right: 10px; */
+  background: #8C8;
+  /* border-radius: 5px; */
+  /* counter-increment: carousel-cell; */
+}
+
+.carousel-cell2  {
+  width: 1500px;
+  /* height: auto; */
+  height: 600px;
+  /* margin-right: 10px; */
+  background: #8C8;
+  /* border-radius: 5px; */
+  /* counter-increment: carousel-cell; */
+}
+
+.carousel-cell3  {
+  width: 1500px;
+  /* height: auto; */
+  height: 600px;
+  /* margin-right: 10px; */
+  background: #8C8;
+  /* border-radius: 5px; */
+  /* counter-increment: carousel-cell; */
+}
+
+.carousel-cell4  {
+  width: 1500px;
+  /* height: auto; */
+  height: 600px;
+  /* margin-right: 10px; */
+  /* background: #8C8; */
+  /* border-radius: 5px; */
+  /* counter-increment: carousel-cell; */
+}
+
+
+.carousel-cell5  {
+  width: 1500px;
+  /* height: auto; */
+  height: 600px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  /* counter-increment: carousel-cell; */
+}
+
+/* cell number */
+.carousel-cell :before {
+  display: block;
+  /* text-align: center; */
+  content:" "
+  /* line-height: 200px;
+  font-size: 80px;
+  color: white; */
+}
+
+#head{
+
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    margin-top: 40px;
+   font-size: 30px;
+   
+    width: 100%;
+}
+
+
+#par{
+    border: 2px solid red;
+    width: 70%;
+    margin: auto;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+#par div p{ 
+
+    text-align: center;
+}
+
+
+#par div img{
+    margin-left: 30px; 
+text-align: center;
+width: 50px;
+}
+
+#head1{
+
+display: flex;
+justify-content: center;
+border: 1px solid red;
+margin-top: 40px;
+font-size: 30px;
+
+width: 100%;
+}
+ 
+#prod1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+ 
+
+
     </style>
 </head>
 <body>
@@ -266,6 +412,7 @@ cursor: default;
     
 </div>
 
+
 <p>Sofas & Recliners</p>
     <p>Living</p>
     <p>Bedroom & Mattresses</p>
@@ -276,12 +423,119 @@ cursor: default;
     <p>Outdoor</p>
     <p>Interiors</p>
     <p>Trending</p>
+</div>
+    <div class="carousel"
+    data-flickity='{ "wrapAround": true,"autoPlay":true }' >
+    <div class= "carousel-cell1" style="background-image: url(./image1.jpg);"> </div>
+    <div class="carousel-cell2"  style="background-image: url(./image2.jpg);"></div>
+    <div class="carousel-cell3" style="background-image: url(./image3.jpg);"></div>
+    <div class="carousel-cell4"  style="background-image: url(./image4.jpg);"></div>
+    <div class="carousel-cell5"  style="background-image: url(./image5.jpg);"></div>
+  </div>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+  <div id="head">
+<p>Explore Our Furniture Range</p>
+</div>
+
+<div id="par">
+<div class="chi1">
+    <img src="https://cdn-icons-png.flaticon.com/128/2652/2652181.png" alt="">
+    <p>Deal Zone</p>
+</div>
+
+
+<div class="chi2">
+    <img src="https://cdn-icons-png.flaticon.com/128/2851/2851266.png" alt="">
+    <p>Bestseller</p>
+</div>
+
+<div class="chi3">
+    <img src="https://cdn-icons-png.flaticon.com/128/2361/2361624.png" alt="">
+    <p>Sofas</p>
+</div>
+
+<div class="chi4">
+    <img src="https://cdn-icons-png.flaticon.com/128/3009/3009931.png" alt="">
+    <p>Beds</p>
+</div>
+
+<div class="chi5">
+    <img src="https://cdn-icons-png.flaticon.com/128/3517/3517193.png" alt="">
+    <p>Dining</p>
+</div>
+
+<div class="chi6">
+    <img src="data:image/jpeg;base64,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" alt="">
+    <p>Wardroves</p>
+</div>
+
+<div class="chi7">
+    <img src="https://cdn-icons-png.flaticon.com/128/1698/1698625.png" alt="">
+    <p>Recliners</p>
+</div>
+
+<div class="chi8">
+    <img src="https://cdn-icons-png.flaticon.com/128/4787/4787458.png" alt="">
+    <p>Seating</p>
+</div>
+
+<div class="chi9">
+    <img src="https://cdn-icons-png.flaticon.com/128/6641/6641256.png" alt="">
+    <p>Coffee Tables</p>
+</div>
+
+<div class="chi10">
+    <img src="https://cdn-icons-png.flaticon.com/128/5224/5224632.png" alt="">
+    <p>Tv Unit</p>
+</div>
+
+<div class="chi11">
+    <img src="https://cdn-icons-png.flaticon.com/128/8653/8653808.png" alt="">
+    <p>Shoe Racks</p>
+</div>
+
+<div class="chi12">
+    <img src="https://cdn-icons-png.flaticon.com/128/3071/3071718.png" alt="">
+    <p>Study Tables</p>
+</div>
+
+<div class="chi13">
+    <img src="https://cdn-icons-png.flaticon.com/128/8378/8378794.png" alt="">
+    <p>Bookshelves</p>
+</div>
+
+<div class="chi14">
+    <img src="https://cdn-icons-png.flaticon.com/128/6924/6924528.png" alt="">
+    <p>Lighting</p>
+</div>
+
+<div class="chi15">
+    <img src="https://cdn-icons-png.flaticon.com/128/9341/9341285.png" alt="">
+    <p>Stores</p>
+</div>
 
 </div>
+
+<div id="head1">
+    <p>Value Buys In Furniture</p>
+</div>
+
+<div id="prod1">
+    <img src="https://www.ulcdn.net/media/Collection/listings/Sofa_Beds_taxon_4.png?1675918246" alt="">
+    <img src="https://www.ulcdn.net/media/Collection/listings/Bookshelves-taxon_5.png?1675918252" alt="">
+    <img src="https://www.ulcdn.net/media/Collection/listings/Dining-taxon_6.jpg?1675918258" alt="">
+</div>
+
 </body>
-<!-- <script>
-let logo=document.getElementById("div3")
-logo.setAttribute("click",)
-</script> -->
+
+
+<script>
+
+
+
+</script>
 
 </html>
