@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deal Zone</title>
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+</head>
+
+
+<style>
+    #div1{
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 90%;
+    margin-top: 5px;
+    /* height: 60px; */
+    padding-left: 100px;
+    display: flex;
+    
+    gap: 40px;
+}
+
+#div2{
+    display: flex;
+    /* border: 1px solid black;  */
+    margin-left: 400px;
+    gap: 30px;
+
+}
+
+#div1>button  {
+    /* width: 60px; */
+
+    background-color: white;
+    display: flex;
+    border-style: hidden;
+    align-items: center;
+    
+}
+
+#div2 button{
+    /* 
+     */
+   /* width: 87px; */
+    background-color: white;
+    display: flex;
+    
+    border-style: hidden;
+    align-items: center;
+    
+}
+
+#div1>button:hover  {
+    /* width: 60px; */
+    color: red;
+    cursor: pointer;
+}
+
+#div2>button:hover  {
+    /* width: 60px; */
+    color: red;
+    cursor: pointer;
+}
+
+#div1>:nth-child(2)  {
+     width: 60px; 
+} 
+
+ #div1>:nth-child(2) {
+    /* background-color: white; */
+    /* border: 5px solid green; */
+    width: 150px;
+    display: flex;
+    border-style: hidden;
+    align-items: center;
+} 
+
+#div1>:nth-child(1) img {
+    width: 30px;
+    
+}
+
+#div1>:nth-child(2) img{
+    width: 40px;
+}
+
+
+
+#div3{
+    /* border: 2px solid green; */
+    margin: auto;
+    
+    width: 100%;
+     display: flex; 
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* justify-content: center; */
+
+}
+
+.in{
+    /* border: 2px solid green; */
+    width: 1000px;
+    margin-top: 20px;
+    margin-left: 90px;
+    align-items: center;
+
+     /* width: 1000px; */
+    /* padding-right: 100px; */
+    
+    height: 40px;
+   
+}
+
+.in>input{
+    width: 600px;
+    height: 40px;
+    margin-top: 5px;
+    /* align-self: center; */
+}
+
+.logo{
+    margin-left: 150px;
+    /* border: 1px solid red; */
+}
+
+a img{
+    
+    width: 100px;
+}
+
+#div4{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* margin-left: px; */
+    margin-right: 150px;
+    align-items: center;
+}
+
+#div4>:nth-child(1){
+    width: 40px;
+    background-color: white;
+    /* border: 2px solid aqua; */
+}
+
+#div4>:nth-child(2){
+    width: 45px;
+    background-color:white;
+    /* border: 2px solid aqua; */
+}
+
+#div4>:nth-child(3){
+    width: 35px;
+    background-color: white;
+    /* border: 2px solid aqua; */
+}
+
+#div4>:nth-child(4){
+    width: 30px;
+    background-color: white;
+    /* border: 2px solid aqua; */
+}
+
+/* #div5{
+    width: 90%;
+    display: flex;
+    margin: auto;
+justify-content: center;
+    gap: 20px;
+
+    
+} */
+
+#big{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+    
+}
+
+#div5>.list1 p {
+    
+    display: block;
+    
+}
+
+#div5>.list1 {
+    /* display: block; */
+    /* width: 250px; */
+    
+    display: none;
+    margin-top: 10px;
+    background-color:white;
+  
+}
+
+
+
+
+#div5:hover .list1{
+    
+    display: block;
+    
+    
+   
+    /* background-color: rgb(60, 60, 211); */
+    /* display: flex; */
+}
+#div5>p:hover{
+color: red;
+cursor: default;
+}
+#div5>.list1 p:hover{
+    color: red;
+    cursor: pointer;
+}
+#div5>.list1 h3:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.list1 a{
+    color: black;
+    text-decoration: none;
+}
+
+
+#head4{
+
+display: flex;
+justify-content: center;
+/* border: 1px solid red; */
+margin-top: 40px;
+font-size: 30px;
+
+width: 100%;
+}
+
+#bar{
+    width: 70%;
+    margin: auto;
+    padding-top:20px ;
+    padding-bottom:20px ;
+    /* border: 2px solid green; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* 
+#bar p{
+    width: 40px;
+    color: white;
+    background-color: red;
+
+} */
+
+#a1{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: red;
+}
+
+
+#a2{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: red;
+}
+
+#container{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    margin-top: 30px;
+    place-items: center;
+    gap: 30px;
+}
+
+
+</style>
+<body>
+    
+
+    <div id="div1">
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY91iTztyhM0D2C7Hl9nzHJm_IBL6rioDMCMoHo9rUIw&s" alt="">Help</button>
+        <button><img src="https://cdn0.iconfinder.com/data/icons/common-version1-2/1024/track_order-512.png" alt="">Track Order</button>
+        
+    
+    
+    <div id="div2">
+        <button>Stores</button>
+        <button>Bulk Orders</button>
+        <button>Gift Cards</button>
+        <button>UL Services</button>
+    </div>
+    
+    </div>
+       
+    <div id="div3">
+        <!-- <img src="./logo.png" alt=""> -->
+       <div class="logo">
+        <a href="home.html"><img src="logo.png"></a>
+    </div>
+        <div class="in">
+        <input type="text" placeholder="search"  >
+    </div>
+    
+        <div id="div4">
+        <img src="https://cdn0.iconfinder.com/data/icons/common-version1-2/1024/track_order-512.png" alt="">
+        <img src="https://media.istockphoto.com/id/944930194/vector/human-icon-element-of-simple-icon-for-websites-web-design-mobile-app-info-graphics-thick-line.jpg?s=1024x1024&w=is&k=20&c=X_TlXYwTK04DzNtW1Fy-wH6gyFoxjCYQbJT3J1ba-O8=" alt="">
+        <img src="https://static.thenounproject.com/png/3386813-200.png" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuAByk2yBppykKgwG3_9BEozisp8Fp8fSAeg&usqp=CAU" alt="">
+        </div>
+    
+    </div>
+    <div id="big">
+    <div id="div5">
+        <p>Deal Zone  </p>
+    
+        <div class="list1">
+            <h3>Top Deals</h3>
+            <a href="dailydeals.html"> <p>Daily Deals</p></a>
+            <p>Weekday Special Deals</p>
+            <p>Stunning Deals</p>
+            <p>Clearance Sale</p>
+            <p>All Products on Sale</p>
+            <p>All Decor on Sale</p>
+        </div>
+        
+    </div>
+    
+    
+    <p>Sofas & Recliners</p>
+        <p>Living</p>
+        <p>Bedroom & Mattresses</p>
+        <p>Dining</p>
+        <p>Storage</p>
+        <p>Study</p>
+        <p>Lighting & Decor</p>
+        <p>Outdoor</p>
+        <p>Interiors</p>
+        <p>Trending</p>
+    </div>
+
+<div id="head4">
+    <p>Daily Deals</p>
+</div>
+
+<div id="bar">
+    <p>filter</p>
+    <select  id="a1">
+        <option value="">category</option>
+        <option value="Study Tables"> Study Tables</option>
+        <option value="Accent Chairs">Accent Chairs</option>
+        <option value="Coffee Tables">Coffee Tables</option>
+        <option value="Tv Units">Tv Units</option>
+        <option value="Sofa cum Bed">Sofa cum Bed</option>
+    </select>
+
+    <select  id="a2">
+        <option value="">price</option>
+        <option value="5000">1000-5000</option>
+        <option value="10000">5000-10000</option>
+        <option value="20000">10000-20000</option>
+        
+    </select>
+</div>
+   <div id="container">
+
+   </div>
+
+</body>
+
+<script>
+
+let arr=[
+    {
+        img:"https://www.ulcdn.net/images/products/223893/product/Twain_Study_Table_LP.jpg?1544673336",
+        category: "Study Tables",
+        price:"10400"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/437641/product/Roswell_Study_Desk_Colour_White_Amber_Walnut_LP.jpg?1638179372",
+        category: "Study Tables",
+        price:"10000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/70365/product/Niccol_Adjustable_Study_Table_Golden_Oak_00_LP.jpg?1452063324",
+        category: "Study Tables",
+        price:"1000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/152993/product/Pashe_Dining_Chair_TL_00_LP.jpg?1502271216",
+        category: "Accent Chairs",
+        price:"20000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/230442/product/Dorothy_GY_LP.jpg?1547114138",
+        category: "Accent Chairs",
+        price:"6000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/219917/product/doris_swivel_accent_chair_grey_replace_LP.jpg?1569471227",
+        category: "Accent Chairs",
+        price:"7000"
+
+
+    },
+
+
+    {
+        img:"https://www.ulcdn.net/images/products/258011/product/DantonFDMHLP.jpg?1550334135",
+        category: "Coffee Tables",
+        price:"8000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/136137/product/Arabia_xxl_8_seater_mahagony_replace-LP.jpg?1571735106",
+        category: "Coffee Tables",
+        price:"9000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/142548/product/base_white_background.jpg?1501769487",
+        category: "Coffee Tables",
+        price:"5000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/125612/product/Zephyr_LargeTV_Unit_LP.jpg?1608823390",
+        category: "Tv Units",
+        price:"11000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/155622/product/cdf.jpg?1507801460",
+        category: "Tv Units",
+        price:"12000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/565354/product/FVSGAV33WN20548_LP.jpg?1654238345",
+        category: "Tv Units",
+        price:"13000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/558102/product/FVSFSC51GY39837_LP.jpg?1653551907",
+        category: "Sofa cum Bed",
+        price:"6500"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/672195/product/FVSFSC51MR23952_LP.jpg?1662103206",
+        category: "Sofa cum Bed",
+        price:"8000"
+
+
+    },
+
+    {
+        img:"https://www.ulcdn.net/images/products/664622/product/FVSFSC62MR39783_LP.jpg?1661187271",
+        category: "Sofa cum Bed",
+        price:"5500"
+
+
+    },
+]
+
+let categ=document.getElementById("a1")
+let pri=document.getElementById("a2")
+
+categ.addEventListener("change",function(){
+  let filteredbycat= arr.filter((element)=>{
+    if(categ.value=="")
+    {
+        return arr
+    }
+    else{
+        return element.category==categ.value
+    }
+    
+  })
+  display(filteredbycat)
+})
+
+pri.addEventListener("change",function(){
+
+    let filteredbyprice=arr.filter((element)=>{
+
+        if(pri.value=="")
+    {
+        return arr
+    }
+    else if(pri.value=="5000")
+    {
+        return element.price>=0 && element.price<=5000
+    }
+    else if(pri.value=="10000")
+    {
+        return element.price>5000 && element.price<=10000
+    }
+
+    else if(pri.value=="20000")
+    {
+        return element.price>10000 && element.price<=20000
+    }
+    })
+    display(filteredbyprice)
+})
+
+let cont=document.getElementById("container")
+display(arr)
+function display(arr){
+    cont.innerHTML=""
+arr.forEach((ele)=>{
+let box=document.createElement("div")
+let img=document.createElement("img")
+img.setAttribute("src",ele.img)
+let cat=document.createElement("p")
+let price=document.createElement("h4")
+cat.innerText=ele.category
+price.innerText= `₹${ele.price}`
+box.append(img,cat,price)
+cont.append(box)
+
+})
+
+}
+</script>
+</html>
