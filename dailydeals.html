@@ -306,10 +306,10 @@ width: 100%;
     <div id="div3">
         <!-- <img src="./logo.png" alt=""> -->
        <div class="logo">
-        <a href="home.html"><img src="logo.png"></a>
+        <a href="index.html"><img src="logo.png"></a>
     </div>
         <div class="in">
-        <input type="text" placeholder="search"  >
+        <input id="search" type="text" placeholder="search"  >
     </div>
     
         <div id="div4">
@@ -502,6 +502,22 @@ let arr=[
 
     },
 ]
+
+
+let search=document.getElementById("search")
+
+search.addEventListener("input",function(){
+    let searchfilter=arr.filter((ele)=>{
+        if(ele.category.toLocaleUpperCase().includes(search.value.toLocaleUpperCase())==true){
+            return true
+        }
+        else{
+            return false
+        }
+    })
+
+    display(searchfilter)
+})
 
 let categ=document.getElementById("a1")
 let pri=document.getElementById("a2")
