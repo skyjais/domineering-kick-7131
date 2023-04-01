@@ -355,11 +355,35 @@
             width: 100%;
         }
 
-        #prod1 {
+        /* #prod1 {
             display: flex;
             justify-content: center;
             gap: 50px;
-        }
+        } */
+
+        * { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+#prod1 {
+
+    width: 70%;
+    /* border: 2px solid red; */
+   
+    margin: auto;
+   
+  background:white;
+}
+
+
+#prod1 img {
+
+/* width: 70%; */
+margin-left: 10px;
+margin: 30px;
+
+/* background:white; */
+}
 
 
         #head2 {
@@ -373,11 +397,35 @@
             width: 100%;
         }
 
-        #prod2 {
+        /* #prod2 {
             display: flex;
             justify-content: center;
             gap: 50px;
-        }
+        } */
+
+        * { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+#prod2 {
+
+    width: 70%;
+    /* border: 2px solid red; */
+   
+    margin: auto;
+   
+  background:white;
+}
+
+
+#prod2 img {
+
+/* width: 70%; */
+
+margin: 30px;
+
+/* background:white; */
+}
 
         .list1 a {
             color: black;
@@ -409,7 +457,7 @@
     <div id="div3">
         <!-- <img src="./logo.png" alt=""> -->
         <div class="logo">
-            <a href="home.html"><img src="logo.png"></a>
+            <a href="index.html"><img src="logo.png"></a>
         </div>
         <div class="in">
             <input type="text" placeholder="search">
@@ -554,22 +602,43 @@
         <p>Value Buys In Furniture</p>
     </div>
 
-    <div id="prod1">
+    <!-- <div id="prod1">
         <img src="https://www.ulcdn.net/media/Collection/listings/Sofa_Beds_taxon_4.png?1675918246" alt="">
         <img src="https://www.ulcdn.net/media/Collection/listings/Bookshelves-taxon_5.png?1675918252" alt="">
         <img src="https://www.ulcdn.net/media/Collection/listings/Dining-taxon_6.jpg?1675918258" alt="">
-    </div>
+    </div> -->
+
+    <div id="prod1" data-flickity='{ "groupCells": true }'>
+        <img class="carousel-cell" src="./page2image1.png" alt="">
+        <img class="carousel-cell" src="./page2image2.png" alt="">
+        <img class="carousel-cell" src="./page2image3.png" alt="">
+        <img class="carousel-cell" src="./page2image4.png" alt="">
+        <img class="carousel-cell" src="./page2image5.png" alt="">
+        <img class="carousel-cell" src="./page2image6.png" alt="">
+        <img class="carousel-cell" src="./page2image7.png" alt="">
+        <img class="carousel-cell" src="./page2image8.png" alt="">
+        <img class="carousel-cell" src="./page2image9.png" alt="">
+        
+      </div>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
     <div id="head2">
         <p>Value Buys In Decor</p>
     </div>
 
-    <div id="prod2">
-        <img src="https://www.ulcdn.net/media/Collection/listings/Lamps___Lighting-taxon_1.png?1675922995" alt="">
-        <img src="https://www.ulcdn.net/media/Collection/listings/Bedsheets-taxon_2.png?1675922999" alt="">
-        <img src="https://www.ulcdn.net/media/Collection/listings/Carpets-taxon_3.png?1675923006" alt="">
-    </div>
+    <div id="prod2" data-flickity='{ "groupCells": true }'>
+        <img class="carousel-cell" src="https://www.ulcdn.net/media/Collection/listings/Lamps___Lighting-taxon_1.png?1675922995" alt="">
+        <img class="carousel-cell" src="https://www.ulcdn.net/media/Collection/listings/Bedsheets-taxon_2.png?1675922999" alt="">
+        <img class="carousel-cell" src="https://www.ulcdn.net/media/Collection/listings/Carpets-taxon_3.png?1675923006" alt="">
+        <img class="carousel-cell" src="https://www.ulcdn.net/media/Collection/listings/Curtains-taxon_4.png?1675923010" alt="">
+        <img class="carousel-cell" src="https://www.ulcdn.net/media/Collection/listings/Cushion_Covers-taxon_5.png?1675923015" alt="">
+        <img class="carousel-cell" src="https://www.ulcdn.net/media/Collection/listings/Bathroom_Accessories-taxon_6.png?1675923018" alt="">
+        <img class="carousel-cell" src="https://www.ulcdn.net/media/Collection/listings/Mirrors--taxon_7.png?1675923023./page2image7.png" alt="">
+        <img class="carousel-cell" src="https://www.ulcdn.net/media/Collection/listings/Showpieces-taxon_8.png?1675923026" alt="">
+        <img class="carousel-cell" src="https://www.ulcdn.net/media/Collection/listings/Wall_Decor-taxon_9.png?1675923029" alt="">
+        
+      </div>
 </body>
 
 
